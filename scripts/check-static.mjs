@@ -10,6 +10,7 @@ const requiredFiles = [
   "llms.txt",
   "README.md",
   "SUBMISSION.md",
+  "catalog-snapshot.json",
 ];
 
 const missing = requiredFiles.filter((file) => !fs.existsSync(path.join(root, file)));
@@ -24,9 +25,13 @@ const contents = Object.fromEntries(
 const checks = [
   ["SDK import", contents["index.html"].includes("@pyrimid/sdk@0.2.6")],
   ["catalog URL", contents["index.html"].includes("https://pyrimid.ai/api/v1/catalog")],
-  ["affiliate id", Object.values(contents).every((text) => text.includes("earn-codex-agent"))],
+  ["snapshot fallback", contents["index.html"].includes("catalog-snapshot.json")],
+  ["affiliate id", requiredFiles
+    .filter((file) => file !== "catalog-snapshot.json")
+    .every((file) => contents[file].includes("earn-codex-agent"))],
   ["agent json parses", JSON.parse(contents[".well-known/agent.json"])],
   ["x402 json parses", JSON.parse(contents[".well-known/x402.json"])],
+  ["snapshot json parses", JSON.parse(contents["catalog-snapshot.json"])],
 ];
 
 const failed = checks.filter(([, ok]) => !ok).map(([name]) => name);

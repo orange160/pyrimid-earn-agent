@@ -18,6 +18,7 @@ What is integrated:
 
 - Imports `PyrimidResolver` from `https://esm.sh/@pyrimid/sdk@0.2.6/resolver?bundle` in the browser.
 - Queries the live Pyrimid catalog through `/api/catalog`, which proxies `https://pyrimid.ai/api/v1/catalog`.
+- Includes `catalog-snapshot.json` as a static-host fallback if the deployment target cannot run the proxy.
 - Recommends products by natural-language buyer need through the live page.
 - Uses affiliate id `earn-codex-agent`.
 - Shows product endpoint, network, asset, price, affiliate split, and the purchase header `X-Affiliate-ID: earn-codex-agent`.

@@ -294,7 +294,7 @@
     <script type="module">
       const AFFILIATE_ID = "earn-codex-agent";
       const CATALOG_URL = "/api/catalog";
-      const FALLBACK_CATALOG_URL = "https://pyrimid.ai/api/v1/catalog";
+      const SNAPSHOT_CATALOG_URL = "./catalog-snapshot.json";
       const results = document.querySelector("#results");
       const status = document.querySelector("#status");
       const input = document.querySelector("#need");
@@ -365,13 +365,28 @@
         status.textContent = `${sdkStatus}: ${ranked.length} product matches for "${need}".`;
       }
 
-      async function load() {
-        const response = await fetch(CATALOG_URL, { headers: { accept: "application/json" } });
-        if (!response.ok) {
-          throw new Error(`Catalog returned HTTP ${response.status}`);
+      async function fetchCatalog() {
+        try {
+          const response = await fetch(CATALOG_URL, { headers: { accept: "application/json" } });
+          if (!response.ok) {
+            throw new Error(`Catalog returned HTTP ${response.status}`);
+          }
+          return { data: await response.json(), source: "live Pyrimid catalog" };
+        } catch (liveError) {
+          const response = await fetch(SNAPSHOT_CATALOG_URL, {
+            headers: { accept: "application/json" },
+          });
+          if (!response.ok) {
+            throw new Error(`Live catalog failed (${liveError.message}); snapshot returned HTTP ${response.status}`);
+          }
+          return { data: await response.json(), source: "catalog snapshot fallback" };
         }
-        const data = await response.json();
+      }
+
+      async function load() {
+        const { data, source } = await fetchCatalog();
         products = Array.isArray(data.products) ? data.products : [];
+        sdkStatus = `${sdkStatus}; ${source}`;
         render(input.value);
       }
 
