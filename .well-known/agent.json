@@ -1,6 +1,6 @@
 {
-  "name": "Earn Codex Pyrimid Recommender",
-  "id": "earn-codex-agent",
+  "name": "Earn Pyrimid Recommender",
+  "id": "earn-pyrimid-agent",
   "description": "A custody-free buyer-agent recommender that queries the live Pyrimid catalog and returns x402 product matches with affiliate attribution.",
   "homepage": "https://orange160.github.io/pyrimid-earn-agent",
   "integration": {
@@ -8,9 +8,9 @@
     "sdk": "@pyrimid/sdk@0.2.6",
     "catalog_url": "https://pyrimid.ai/api/v1/catalog",
     "integration_path": "embedded_resolver_browser_proof",
-    "affiliate_id": "earn-codex-agent",
+    "affiliate_id": "earn-pyrimid-agent",
     "purchase_header": {
-      "X-Affiliate-ID": "earn-codex-agent"
+      "X-Affiliate-ID": "earn-pyrimid-agent"
     }
   },
   "payment": {

@@ -1,4 +1,4 @@
-# Earn Codex Pyrimid Recommender
+# Earn Pyrimid Recommender
 
 This is a buyer-agent recommendation proof for Pyrimid.
 
@@ -7,8 +7,8 @@ This is a buyer-agent recommendation proof for Pyrimid.
 - x402 metadata: https://orange160.github.io/pyrimid-earn-agent/.well-known/x402.json
 - Catalog source: https://pyrimid.ai/api/v1/catalog
 - SDK proof: @pyrimid/sdk@0.2.6 browser import
-- Affiliate ID: earn-codex-agent
-- Purchase header: X-Affiliate-ID: earn-codex-agent
+- Affiliate ID: earn-pyrimid-agent
+- Purchase header: X-Affiliate-ID: earn-pyrimid-agent
 - Payout: Base USDC to 0xfbb129b9f211c84bd59444c5504d6619031220a2
 
 The service recommends products only. It does not request private keys, seed

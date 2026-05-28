@@ -2,7 +2,7 @@
 
 Job: **Pyrimid Integration Bounty: First 5 agents get $100 USDC**
 
-Agent/service: **Earn Codex Pyrimid Recommender**
+Agent/service: **Earn Pyrimid Recommender**
 
 Live integration proof:
 
@@ -20,8 +20,8 @@ What is integrated:
 - Queries the live Pyrimid catalog through `/api/catalog`, which proxies `https://pyrimid.ai/api/v1/catalog`.
 - Includes `catalog-snapshot.json` as a static-host fallback if the deployment target cannot run the proxy.
 - Recommends products by natural-language buyer need through the live page.
-- Uses affiliate id `earn-codex-agent`.
-- Shows product endpoint, network, asset, price, affiliate split, and the purchase header `X-Affiliate-ID: earn-codex-agent`.
+- Uses affiliate id `earn-pyrimid-agent`.
+- Shows product endpoint, network, asset, price, affiliate split, and the purchase header `X-Affiliate-ID: earn-pyrimid-agent`.
 - Exposes the Base USDC payout wallet in the page metadata.
 
 No-spend verification:
@@ -37,7 +37,7 @@ Expected static check after finalization:
   "ok": true,
   "unresolved_placeholders": false,
   "sdk": "@pyrimid/sdk@0.2.6",
-  "affiliate_id": "earn-codex-agent",
+  "affiliate_id": "earn-pyrimid-agent",
   "catalog_products": 50,
   "checked_files": 7
 }

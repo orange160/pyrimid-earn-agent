@@ -1,12 +1,12 @@
 {
   "x402Version": 1,
-  "service": "Earn Codex Pyrimid Recommender",
+  "service": "Earn Pyrimid Recommender",
   "role": "buyer-agent-recommender",
   "network": "base",
   "asset": "USDC",
   "catalog": "https://pyrimid.ai/api/v1/catalog",
   "affiliate": {
-    "id": "earn-codex-agent",
+    "id": "earn-pyrimid-agent",
     "header": "X-Affiliate-ID",
     "payoutWallet": "0xfbb129b9f211c84bd59444c5504d6619031220a2"
   },

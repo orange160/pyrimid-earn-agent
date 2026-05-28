@@ -28,7 +28,7 @@ const checks = [
   ["snapshot fallback", contents["index.html"].includes("catalog-snapshot.json")],
   ["affiliate id", requiredFiles
     .filter((file) => file !== "catalog-snapshot.json")
-    .every((file) => contents[file].includes("earn-codex-agent"))],
+    .every((file) => contents[file].includes("earn-pyrimid-agent"))],
   ["agent json parses", JSON.parse(contents[".well-known/agent.json"])],
   ["x402 json parses", JSON.parse(contents[".well-known/x402.json"])],
   ["snapshot json parses", JSON.parse(contents["catalog-snapshot.json"])],
@@ -62,7 +62,7 @@ console.log(JSON.stringify({
   ok: !unresolved,
   unresolved_placeholders: unresolved,
   sdk: "@pyrimid/sdk@0.2.6",
-  affiliate_id: "earn-codex-agent",
+  affiliate_id: "earn-pyrimid-agent",
   catalog_products: products,
   checked_files: requiredFiles.length,
 }, null, 2));

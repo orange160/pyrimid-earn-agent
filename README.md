@@ -1,4 +1,4 @@
-# Earn Codex Pyrimid Recommender
+# Earn Pyrimid Recommender
 
 Static buyer-agent integration proof for the Pyrimid job #20 bounty.
 
@@ -15,7 +15,7 @@ Manual path: run `npm run finalize -- <publish-url> <base-usdc-wallet> <source-r
 - Imports `PyrimidResolver` from `https://esm.sh/@pyrimid/sdk@0.2.6/resolver?bundle`.
 - Queries the live catalog through `/api/catalog`, a Vercel function that proxies `https://pyrimid.ai/api/v1/catalog`.
 - Falls back to `catalog-snapshot.json` on static hosts that cannot run the proxy.
-- Ranks products for a buyer need and displays endpoint, network, price, split, and `X-Affiliate-ID: earn-codex-agent`.
+- Ranks products for a buyer need and displays endpoint, network, price, split, and `X-Affiliate-ID: earn-pyrimid-agent`.
 - Exposes `.well-known/agent.json`, `.well-known/x402.json`, `agents.txt`, and `llms.txt`.
 
 ## Safety
