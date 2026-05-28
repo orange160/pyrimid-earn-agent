@@ -2,7 +2,7 @@
   "name": "Earn Codex Pyrimid Recommender",
   "id": "earn-codex-agent",
   "description": "A custody-free buyer-agent recommender that queries the live Pyrimid catalog and returns x402 product matches with affiliate attribution.",
-  "homepage": "PUBLISH_URL_TO_BE_FILLED",
+  "homepage": "https://orange160.github.io/pyrimid-earn-agent",
   "integration": {
     "protocol": "pyrimid",
     "sdk": "@pyrimid/sdk@0.2.6",
@@ -16,7 +16,7 @@
   "payment": {
     "network": "Base",
     "asset": "USDC",
-    "payout_wallet": "BASE_USDC_WALLET_TO_BE_FILLED"
+    "payout_wallet": "0xfbb129b9f211c84bd59444c5504d6619031220a2"
   },
   "safety": {
     "custody": "does not request or store private keys, seed phrases, wallet credentials, OAuth tokens, or payment credentials",

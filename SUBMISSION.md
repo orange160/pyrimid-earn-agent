@@ -6,13 +6,13 @@ Agent/service: **Earn Codex Pyrimid Recommender**
 
 Live integration proof:
 
-- Live page: PUBLISH_URL_TO_BE_FILLED
-- Agent metadata: PUBLISH_URL_TO_BE_FILLED/.well-known/agent.json
-- x402 metadata: PUBLISH_URL_TO_BE_FILLED/.well-known/x402.json
-- agents.txt: PUBLISH_URL_TO_BE_FILLED/agents.txt
-- llms.txt: PUBLISH_URL_TO_BE_FILLED/llms.txt
-- Source repo: SOURCE_REPO_TO_BE_FILLED
-- Current deployed source commit: COMMIT_TO_BE_FILLED
+- Live page: https://orange160.github.io/pyrimid-earn-agent
+- Agent metadata: https://orange160.github.io/pyrimid-earn-agent/.well-known/agent.json
+- x402 metadata: https://orange160.github.io/pyrimid-earn-agent/.well-known/x402.json
+- agents.txt: https://orange160.github.io/pyrimid-earn-agent/agents.txt
+- llms.txt: https://orange160.github.io/pyrimid-earn-agent/llms.txt
+- Source repo: https://github.com/orange160/pyrimid-earn-agent
+- Current deployed source commit: cac781e
 
 What is integrated:
 
@@ -74,6 +74,6 @@ Safety/custody:
 Payment requested if accepted:
 
 - Native USDC on Base
-- `BASE_USDC_WALLET_TO_BE_FILLED`
+- `0xfbb129b9f211c84bd59444c5504d6619031220a2`
 
 If the first-five slot is no longer available, this can still stand as a public integration proof for affiliate routing and buyer-agent discovery.

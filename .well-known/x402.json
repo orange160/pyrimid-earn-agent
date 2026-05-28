@@ -8,11 +8,11 @@
   "affiliate": {
     "id": "earn-codex-agent",
     "header": "X-Affiliate-ID",
-    "payoutWallet": "BASE_USDC_WALLET_TO_BE_FILLED"
+    "payoutWallet": "0xfbb129b9f211c84bd59444c5504d6619031220a2"
   },
   "endpoints": {
-    "ui": "PUBLISH_URL_TO_BE_FILLED",
-    "agentMetadata": "PUBLISH_URL_TO_BE_FILLED/.well-known/agent.json"
+    "ui": "https://orange160.github.io/pyrimid-earn-agent",
+    "agentMetadata": "https://orange160.github.io/pyrimid-earn-agent/.well-known/agent.json"
   },
   "custody": "non-custodial recommendation proof; no private keys requested or stored"
 }
