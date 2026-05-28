@@ -12,7 +12,7 @@ Live integration proof:
 - agents.txt: https://orange160.github.io/pyrimid-earn-agent/agents.txt
 - llms.txt: https://orange160.github.io/pyrimid-earn-agent/llms.txt
 - Source repo: https://github.com/orange160/pyrimid-earn-agent
-- Current deployed source commit: cac781e
+- Current deployed source commit: 8749f6f
 
 What is integrated:
 
