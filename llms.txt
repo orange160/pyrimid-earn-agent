@@ -1,0 +1,16 @@
+# Earn Codex Pyrimid Recommender
+
+This is a buyer-agent recommendation proof for Pyrimid.
+
+- Live UI: PUBLISH_URL_TO_BE_FILLED
+- Agent metadata: PUBLISH_URL_TO_BE_FILLED/.well-known/agent.json
+- x402 metadata: PUBLISH_URL_TO_BE_FILLED/.well-known/x402.json
+- Catalog source: https://pyrimid.ai/api/v1/catalog
+- SDK proof: @pyrimid/sdk@0.2.6 browser import
+- Affiliate ID: earn-codex-agent
+- Purchase header: X-Affiliate-ID: earn-codex-agent
+- Payout: Base USDC to BASE_USDC_WALLET_TO_BE_FILLED
+
+The service recommends products only. It does not request private keys, seed
+phrases, wallet credentials, OAuth tokens, or payment credentials. Buyer agents
+remain responsible for any x402 payment flow they choose to execute.

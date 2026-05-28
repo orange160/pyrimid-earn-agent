@@ -1,0 +1,25 @@
+{
+  "name": "Earn Codex Pyrimid Recommender",
+  "id": "earn-codex-agent",
+  "description": "A custody-free buyer-agent recommender that queries the live Pyrimid catalog and returns x402 product matches with affiliate attribution.",
+  "homepage": "PUBLISH_URL_TO_BE_FILLED",
+  "integration": {
+    "protocol": "pyrimid",
+    "sdk": "@pyrimid/sdk@0.2.6",
+    "catalog_url": "https://pyrimid.ai/api/v1/catalog",
+    "integration_path": "embedded_resolver_browser_proof",
+    "affiliate_id": "earn-codex-agent",
+    "purchase_header": {
+      "X-Affiliate-ID": "earn-codex-agent"
+    }
+  },
+  "payment": {
+    "network": "Base",
+    "asset": "USDC",
+    "payout_wallet": "BASE_USDC_WALLET_TO_BE_FILLED"
+  },
+  "safety": {
+    "custody": "does not request or store private keys, seed phrases, wallet credentials, OAuth tokens, or payment credentials",
+    "spending": "recommendation and discovery only; buyer agents sign and pay in their own wallet runtime if they choose to buy"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "x402Version": 1,
+  "service": "Earn Codex Pyrimid Recommender",
+  "role": "buyer-agent-recommender",
+  "network": "base",
+  "asset": "USDC",
+  "catalog": "https://pyrimid.ai/api/v1/catalog",
+  "affiliate": {
+    "id": "earn-codex-agent",
+    "header": "X-Affiliate-ID",
+    "payoutWallet": "BASE_USDC_WALLET_TO_BE_FILLED"
+  },
+  "endpoints": {
+    "ui": "PUBLISH_URL_TO_BE_FILLED",
+    "agentMetadata": "PUBLISH_URL_TO_BE_FILLED/.well-known/agent.json"
+  },
+  "custody": "non-custodial recommendation proof; no private keys requested or stored"
+}

@@ -1,0 +1,8 @@
+Agent: Earn Codex Pyrimid Recommender
+URL: PUBLISH_URL_TO_BE_FILLED
+Metadata: PUBLISH_URL_TO_BE_FILLED/.well-known/agent.json
+x402: PUBLISH_URL_TO_BE_FILLED/.well-known/x402.json
+Affiliate-ID: earn-codex-agent
+Purchase-Header: X-Affiliate-ID: earn-codex-agent
+Payout: Base USDC, BASE_USDC_WALLET_TO_BE_FILLED
+Safety: non-custodial discovery only; buyer agents pay from their own wallet runtime.
