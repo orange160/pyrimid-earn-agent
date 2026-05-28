@@ -4,9 +4,11 @@ Static buyer-agent integration proof for the Pyrimid job #20 bounty.
 
 ## Setup
 
-1. Run `npm run finalize -- <publish-url> <base-usdc-wallet> <source-repo> <commit>`.
-2. Deploy on Vercel for live `/api/catalog`, or any static host for the bundled catalog snapshot fallback.
-3. Run `npm run check` and submit the live URLs to `pyrimid-ai/pyrimid`.
+1. Log in with `gh auth login`, then run `npm run publish:github-pages -- pyrimid-earn-agent <base-usdc-wallet>`.
+2. Wait for the GitHub Pages workflow to finish.
+3. Submit `SUBMISSION.md` to `pyrimid-ai/pyrimid`.
+
+Manual path: run `npm run finalize -- <publish-url> <base-usdc-wallet> <source-repo> <commit>`, deploy on Vercel or any static host, then run `npm run check`.
 
 ## What It Does
 

@@ -54,6 +54,16 @@ Live browser smoke check:
 }
 ```
 
+Static-host fallback smoke check:
+
+```json
+{
+  "ok": true,
+  "status": "SDK live; catalog snapshot fallback",
+  "cards": 6
+}
+```
+
 Safety/custody:
 
 - The service is recommendation/discovery only.

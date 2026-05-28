@@ -7,6 +7,7 @@
     "check": "node scripts/check-static.mjs",
     "dev": "vercel dev",
     "finalize": "node scripts/finalize.mjs",
+    "publish:github-pages": "node scripts/publish-github-pages.mjs",
     "serve:local": "node scripts/serve-local.mjs"
   },
   "engines": {
